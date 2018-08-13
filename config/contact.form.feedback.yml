@@ -1,0 +1,14 @@
+uuid: 957a8b09-7460-4ac2-9b4e-a588b7e9f692
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - monan@techreprieve.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

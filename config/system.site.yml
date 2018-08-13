@@ -1,0 +1,14 @@
+uuid: 4de4f7a1-4464-418c-97a0-4a4afb1ce3fd
+name: mikes-d8-demo
+mail: monan@techreprieve.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
