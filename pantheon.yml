@@ -1,19 +1,43 @@
 api_version: 1
 web_docroot: true
 php_version: 7.2
-workflows:
+workflows: 
+
   deploy_product:
     after:
-      -
-        type: webphp
+      - type: webphp
         description: 'Run composer prepare-for-pantheon'
         script: private/scripts/deploy_product/prepare-for-pantheon.php
-      -
-        type: webphp
+      - type: webphp
         description: 'Run composer install & drupal-scaffold'
         script: private/scripts/deploy_product/composer-install.php
+
+  # Code Sync: Making Magic Happen With Each Commit
   sync_code:
     after:
       - type: webphp
+        description: posting to Slack about the commit
+        script: private/scripts/slack_after_code_sync.php
+      - type: webphp
+        description: importing the Drupal 8 config into the site
+        script: private/scripts/import_config_d8.php
+      - type: webphp
         description: Push changes back to GitHub if needed
         script: private/scripts/quicksilver/quicksilver-pushback/push-back-to-github.php
+
+  # Deploy: Making Magic Happen in the Test Environment
+  deploy:
+    before:
+      - type: webphp
+        description: posting to Slack about the deployment
+        script: private/scripts/slack_before_deploy.php
+    after:
+      - type: webphp
+        description: importing the Drupal 8 config into the site
+        script: private/scripts/import_config_d8.php
+      - type: webphp
+        description: Log to New Relic
+        script: private/scripts/new_relic_deploy.php
+      - type: webphp
+        description: Performance Testing with Loader.IO
+        script: private/scripts/loaderio_performance.php
