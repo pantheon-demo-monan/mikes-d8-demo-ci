@@ -9,7 +9,7 @@ $secrets  = _get_secrets( array( 'loader_api_key' ), $defaults );
 
 // Define Values to Get Started
 $api_key = $secrets['loader_api_key'];
-$test_id = 'a747d3fa27c22fffeee4739c8a9e3709';
+$test_id = '661443f4ffb65ab5c4d47c561a7cf047';
 $slack_channel_name = 'mikes-ci-demo';
 $slack_user_name = 'PerformanceTesting-with-LoaderIO';
 $slack_user_icon = 'http://dev-mikes-d8-demo.pantheonsite.io/sites/default/files/icons/loaderio.png';
