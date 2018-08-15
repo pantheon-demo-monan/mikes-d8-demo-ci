@@ -21,6 +21,7 @@ module:
   help: 0
   history: 0
   image: 0
+  image_url_formatter: 0
   link: 0
   menu_ui: 0
   node: 0
@@ -51,3 +52,4 @@ theme:
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 profile: null
+
