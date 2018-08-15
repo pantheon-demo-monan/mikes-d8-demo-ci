@@ -124,7 +124,6 @@ $attachment = array(
 
 _slack_notification($secrets['slack_url'], $secrets['slack_channel'], $secrets['slack_username'], $text, $attachment, $secrets['always_show_text']);
 
-
 /**
  * Get secrets from secrets file.
  *
