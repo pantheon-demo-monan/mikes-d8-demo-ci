@@ -1,0 +1,14 @@
+uuid: 63dc8269-8cac-4214-b135-5f7da7285456
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.drupalcon
+  module:
+    - user
+id: user_add_role_action.drupalcon
+label: 'Add the Drupalcon role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: drupalcon

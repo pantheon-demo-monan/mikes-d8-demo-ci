@@ -1,0 +1,20 @@
+uuid: 0874c8cf-3499-4862-989c-8e0d4f63e27e
+langcode: en
+status: true
+dependencies: {  }
+id: drupalcon
+label: Drupalcon
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'administer menu'
+  - 'administer site configuration'
+  - 'administer views'
+  - 'customize shortcut links'
+  - 'export configuration'
+  - 'import configuration'
+  - 'synchronize configuration'
+  - 'view the administration theme'

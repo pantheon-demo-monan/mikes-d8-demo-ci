@@ -1,4 +1,4 @@
-uuid: 65cd208c-1f13-4196-a8e1-0481e866452c
+uuid: 898f093a-d21d-4d23-86df-063fc7180db7
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: HacS-nsDH7uyoKhQHNyV_MNRClmPVuhU_fWZgNuEyIs
+  default_config_hash: HDMjKTBWeuHvsV6i6VvULmfhiSjNzIH1hCoy5GuZD0E
 id: comments_recent
 label: 'Recent comments'
 module: views
@@ -51,6 +51,10 @@ display:
         type: fields
         options:
           default_field_elements: true
+          inline:
+            subject: subject
+            changed: changed
+          separator: ' '
           hide_empty: false
       relationships:
         node:

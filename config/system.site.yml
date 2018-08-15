@@ -1,6 +1,6 @@
-uuid: 4de4f7a1-4464-418c-97a0-4a4afb1ce3fd
-name: mikes-d8-demo
-mail: monan@techreprieve.com
+uuid: abf09232-3312-4a7c-aab2-d547dd1f0ab7
+name: 'The Pantheon Theatre'
+mail: noreply@pantheon.io
 slogan: ''
 page:
   403: ''
@@ -11,4 +11,4 @@ weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

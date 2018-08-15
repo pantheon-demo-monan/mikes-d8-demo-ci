@@ -1,0 +1,14 @@
+uuid: 0c199b32-2cbc-437e-9312-6cb7c281c31f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.drupalcon
+  module:
+    - user
+id: user_remove_role_action.drupalcon
+label: 'Remove the Drupalcon role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: drupalcon
