@@ -3,7 +3,7 @@
 require_once( dirname( __FILE__ ) . '/slack_helper.php' );
 
 if ( isset( $_POST['wf_type'] ) && $_POST['wf_type'] == 'sync_code' ) {
-  // Get the committer, hash, and message for the most recent commit.
+  // Retrieve the committer, hash, and message for the most recent commit.
   $committer = `git log -1 --pretty=%cn`;
   $commit_message   = `git log -1 --pretty=%B`;
   $hash      = `git log -1 --pretty=%h`;
