@@ -15,5 +15,5 @@ if ( isset( $_POST['wf_type'] ) && $_POST['wf_type'] == 'deploy' ) {
   $output['Environment'] = '`' . $_ENV['PANTHEON_ENVIRONMENT'] . '`';
   $output['Deployed By'] = $_POST['user_email'];
   $output['Site Name'] = '`' . $_ENV['PANTHEON_SITE_NAME'] . '`';
-	_slack_tell( $output, 'mikes-ci-demo', 'Pantheon Deployment', 'http://dev-mikes-d8-demo.pantheonsite.io/sites/default/files/icons/pantheon.png', '#EFD01B');
+  _slack_tell( $output, 'mikes-ci-demo', 'Pantheon Deployment', 'http://dev-mikes-d8-demo.pantheonsite.io/sites/default/files/icons/pantheon.png', '#EFD01B');
 }
