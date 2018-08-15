@@ -11,6 +11,9 @@ workflows:
       - type: webphp
         description: 'Run composer install & drupal-scaffold'
         script: private/scripts/deploy_product/composer-install.php
+      - type: webphp
+        description: Post to Slack after site creation
+        script: private/scripts/slack_notification.php
 
   # Code Sync: Making Magic Happen With Each Commit
   sync_code:
@@ -41,3 +44,23 @@ workflows:
       - type: webphp
         description: Performance Testing with Loader.IO
         script: private/scripts/loaderio_performance.php
+  create_cloud_development_environment:
+    after: 
+      - type: webphp
+        description: Post to Slack after Multidev creation
+        script: private/scripts/slack_notification.php
+  deploy:
+    after:
+      - type: webphp
+        description: Post to Slack after deploy
+        script: private/scripts/slack_notification.php
+  sync_code:
+    after:
+      - type: webphp
+        description: Post to Slack after code commit
+        script: private/scripts/slack_notification.php
+  clear_cache:
+    after:
+      - type: webphp
+        description: Someone is clearing the cache again
+        script: private/scripts/slack_notification.php
