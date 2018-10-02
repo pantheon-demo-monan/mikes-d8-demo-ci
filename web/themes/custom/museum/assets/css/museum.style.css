@@ -1509,16 +1509,16 @@ background-color: antiquewhite;}
   @media (min-width: 768px) {
     .container {
       width: 100%;
-       background-color: #10193af2;} }
+       background-color: yellow;} }
   @media (min-width: 992px) {
     .container {
       width: 100%;
-      background-color: #10193af2;
+      background-color: green;
       } }
   @media (min-width: 1200px) {
     .container {
       width: 100%;
-      background-color: #10193af2;} }
+      background-color: white;} }
 
 .container-fluid {
   margin-right: auto;
