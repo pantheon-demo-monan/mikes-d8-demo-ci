@@ -1,10 +1,12 @@
-uuid: 6f520e55-81b1-41d8-9213-38e05140f03e
+uuid: 51e15394-51d2-4aaf-a08e-0e8474d62622
 langcode: en
 status: true
 dependencies:
   module:
     - comment
     - user
+_core:
+  default_config_hash: cCq1vjj1qmyd39oBIUyOe8YPDsobJ5fZRhp2Xy5O7lA
 id: comment
 label: Comments
 module: comment
@@ -691,7 +693,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -732,7 +733,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -966,7 +966,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1007,7 +1006,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''

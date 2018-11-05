@@ -1,4 +1,4 @@
-uuid: d5765a80-cf26-4fea-9562-3ec6407ebb1d
+uuid: 6acfe603-0263-459f-9cf2-2da2ac22d5c4
 langcode: en
 status: true
 dependencies:
@@ -138,9 +138,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
